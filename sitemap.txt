@@ -1,0 +1,4 @@
+http://example.com/2023/03/04/test/
+http://example.com/2023/03/04/post/
+http://example.com/
+http://example.com/tags/test/

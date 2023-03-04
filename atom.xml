@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>潇潇潇的博客</title>
+  
+  <subtitle>潇潇潇</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2023-03-04T11:25:38.063Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>潇潇潇</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>又一次见面，真好</title>
+    <link href="http://example.com/2023/03/04/test/"/>
+    <id>http://example.com/2023/03/04/test/</id>
+    <published>2023-03-04T11:22:41.000Z</published>
+    <updated>2023-03-04T11:25:38.063Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="file:///home/mxvivi/Blog/themes/Sw-blog/source/background/bg-19.jpg"></p>]]></content>
+    
+    
+    <summary type="html">我是潇潇潇</summary>
+    
+    
+    
+    
+    <category term="test" scheme="http://example.com/tags/test/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>post</title>
+    <link href="http://example.com/2023/03/04/post/"/>
+    <id>http://example.com/2023/03/04/post/</id>
+    <published>2023-03-04T11:21:50.000Z</published>
+    <updated>2023-03-04T11:21:50.440Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+</feed>
