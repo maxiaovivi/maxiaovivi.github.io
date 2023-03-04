@@ -43,9 +43,9 @@
     <link href="http://example.com/2023/03/04/test/"/>
     <id>http://example.com/2023/03/04/test/</id>
     <published>2023-03-04T11:22:41.000Z</published>
-    <updated>2023-03-04T11:25:38.063Z</updated>
+    <updated>2023-03-04T14:01:58.287Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="file:///home/mxvivi/Blog/themes/Sw-blog/source/background/bg-19.jpg"></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="新的一天"><a href="#新的一天" class="headerlink" title="新的一天"></a>新的一天</h1><p><img src="/home/mxvivi/Blog/public/img/bg-11.jpg"></p><p>之前使用过的wordpress由于没有继续为服务器续费就停止使用啦。现在Hexo与github上又随缘的弄了一下博客。记录一下我做的毕业设计吧。</p>]]></content>
     
     
     <summary type="html">我是潇潇潇</summary>
@@ -54,19 +54,6 @@
     
     
     <category term="test" scheme="http://example.com/tags/test/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>post</title>
-    <link href="http://example.com/2023/03/04/post/"/>
-    <id>http://example.com/2023/03/04/post/</id>
-    <published>2023-03-04T11:21:50.000Z</published>
-    <updated>2023-03-04T11:21:50.440Z</updated>
-    
-    
-    
-    
     
   </entry>
   
