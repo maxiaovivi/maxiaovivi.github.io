@@ -1,3 +1,4 @@
+http://example.com/2023/03/06/seaship/
 http://example.com/2023/03/04/docker-2/
 http://example.com/2023/03/04/docker/
 http://example.com/2023/03/04/shi/
@@ -6,5 +7,6 @@ http://example.com/
 http://example.com/tags/test/
 http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%8A%80%E6%9C%AF/
 http://example.com/tags/%E8%AF%97%E8%AF%8D/
+http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89-%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/
 http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%8A%80%E6%9C%AF/
 http://example.com/categories/%E9%A3%9E%E8%8A%B1%E4%BB%A4/
