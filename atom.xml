@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-03-09T14:41:51.083Z</updated>
+  <updated>2023-03-16T15:02:11.830Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>利用python提取古诗词json中特定字的诗词</title>
+    <link href="http://example.com/2023/03/16/jsontiqu-md/"/>
+    <id>http://example.com/2023/03/16/jsontiqu-md/</id>
+    <published>2023-03-16T14:08:46.000Z</published>
+    <updated>2023-03-16T15:02:11.830Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="古诗词库下载"><a href="#古诗词库下载" class="headerlink" title="古诗词库下载"></a>古诗词库下载</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/chinese-poetry/chinese-poetry</span><br></pre></td></tr></table></figure><h2 id="提取并输出到-md格式文件中"><a href="#提取并输出到-md格式文件中" class="headerlink" title="提取并输出到.md格式文件中"></a>提取并输出到.md格式文件中</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> json</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;XXX.json&#x27;</span>, <span class="string">&#x27;r&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">    poems = json.load(f)</span><br><span class="line"></span><br><span class="line">result = []</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> poem <span class="keyword">in</span> poems:</span><br><span class="line">    <span class="keyword">if</span> <span class="string">&#x27;paragraphs&#x27;</span> <span class="keyword">not</span> <span class="keyword">in</span> poem:</span><br><span class="line">        <span class="keyword">continue</span></span><br><span class="line">    content = <span class="string">&#x27;&#x27;</span>.join(poem[<span class="string">&#x27;paragraphs&#x27;</span>])</span><br><span class="line">    <span class="keyword">if</span> <span class="string">&#x27;君&#x27;</span> <span class="keyword">in</span> content:</span><br><span class="line">        title = <span class="string">&quot;## &quot;</span> + poem[<span class="string">&#x27;title&#x27;</span>] + <span class="string">&quot;\n&quot;</span>  <span class="comment"># 将标题修改为二级标题</span></span><br><span class="line">        author = poem[<span class="string">&#x27;author&#x27;</span>] + <span class="string">&quot;\n&quot;</span>  <span class="comment"># 将作者名不加粗</span></span><br><span class="line">        content_lines = poem[<span class="string">&#x27;paragraphs&#x27;</span>]</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(content_lines)):</span><br><span class="line">            <span class="keyword">if</span> <span class="string">&#x27;君&#x27;</span> <span class="keyword">in</span> content_lines[i]:</span><br><span class="line">                content_lines[i] = <span class="string">&#x27;**&#x27;</span> + content_lines[i] + <span class="string">&#x27;**&#x27;</span>  <span class="comment"># 将包含“君”的那一句加粗</span></span><br><span class="line">        content = <span class="string">&#x27;\n&#x27;</span>.join(content_lines)</span><br><span class="line">        result.append(title + author + <span class="string">&#x27;\n&#x27;</span> + content + <span class="string">&quot;\n\n&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;XXX&#x27;</span>, <span class="string">&#x27;w&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">    f.writelines(result)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;古诗词库下载&quot;&gt;&lt;a href=&quot;#古诗词库下载&quot; class=&quot;headerlink&quot; title=&quot;古诗词库下载&quot;&gt;&lt;/a&gt;古诗词库下载&lt;/h2&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gut</summary>
+      
+    
+    
+    
+    <category term="计算机技术" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="古诗词 python" scheme="http://example.com/tags/%E5%8F%A4%E8%AF%97%E8%AF%8D-python/"/>
+    
+  </entry>
   
   <entry>
     <title>yolo</title>
