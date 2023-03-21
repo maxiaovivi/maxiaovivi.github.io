@@ -1,8 +1,8 @@
+http://example.com/2023/03/21/chuqi/
 http://example.com/2023/03/16/jsontiqu-md/
 http://example.com/2023/03/04/feng/
 http://example.com/2023/03/04/shi/
 http://example.com/2023/03/04/test/
-http://example.com/2023/03/09/yolo/
 http://example.com/2023/03/09/git/
 http://example.com/2023/03/06/seaship/
 http://example.com/2023/03/04/docker-2/
@@ -14,5 +14,7 @@ http://example.com/tags/%E8%AF%97%E8%AF%8D/
 http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89-%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/
 http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%8A%80%E6%9C%AF-%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/
 http://example.com/tags/%E5%8F%A4%E8%AF%97%E8%AF%8D-python/
+http://example.com/tags/pytorch-%E5%AF%B9%E6%8A%97%E6%A0%B7%E6%9C%AC/
 http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%8A%80%E6%9C%AF/
 http://example.com/categories/%E9%A3%9E%E8%8A%B1%E4%BB%A4/
+http://example.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/
