@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-12-09T13:31:10.297Z</updated>
+  <updated>2023-12-09T13:33:55.458Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,37 +21,14 @@
     <link href="http://example.com/2023/12/09/Technology/software/source-post-BlogManager/"/>
     <id>http://example.com/2023/12/09/Technology/software/source-post-BlogManager/</id>
     <published>2023-12-09T13:30:27.000Z</published>
-    <updated>2023-12-09T13:31:10.297Z</updated>
+    <updated>2023-12-09T13:33:55.458Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/images/justin-lim-tloFnD-7EpI-unsplash%201.jpg" alt=""></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/justin-lim-tloFnD-7EpI-unsplash%201.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Obsdian + Hexo + Git == Prefect Blog</title>
-    <link href="http://example.com/2023/12/09/Technology/software/Obsdian%20+%20Hexo%20+%20Git%20==%20Prefect%20Blog/"/>
-    <id>http://example.com/2023/12/09/Technology/software/Obsdian%20+%20Hexo%20+%20Git%20==%20Prefect%20Blog/</id>
-    <published>2023-12-09T12:15:54.289Z</published>
-    <updated>2023-12-09T13:07:29.815Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="images/justin-lim-tloFnD-7EpI-unsplash%201.jpg" alt=""></p><p><img src="/images/justin-lim-tloFnD-7EpI-unsplash%201.jpg" alt=""></p>]]></content>
     
     
     <summary type="html"> 通过多种软件进行博客管理，以免乱糟糟的</summary>
     
     
-    
-    <category term="计算机技术 软件" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%8A%80%E6%9C%AF-%E8%BD%AF%E4%BB%B6/"/>
     
     
     <category term="软件使用" scheme="http://example.com/tags/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/"/>
