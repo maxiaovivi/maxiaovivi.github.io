@@ -1,7 +1,7 @@
-http://example.com/2023/12/09/Technology/software/source-post-BlogManager/
+http://example.com/2023/12/09/Technology/software/BlogManager/
+http://example.com/2023/03/21/Technology/DeepLearning/chuqi/
 http://example.com/2023/03/04/Lifestyle/Poetry/feng/
 http://example.com/2023/03/09/Technology/ComputerScience/git/
-http://example.com/2023/03/21/Technology/DeepLearning/chuqi/
 http://example.com/2023/03/26/Technology/ComputerScience/install-wechat/
 http://example.com/2023/03/04/Lifestyle/Essays/test/
 http://example.com/2023/03/16/Lifestyle/Poetry/jsontiqu-md/
