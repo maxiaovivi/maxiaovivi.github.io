@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://example.com/2023/12/09/Technology/software/source-post-BlogManager/</loc>
+    
+    <lastmod>2023-12-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/2023/12/09/Technology/software/Obsdian%20+%20Hexo%20+%20Git%20==%20Prefect%20Blog/</loc>
     
     <lastmod>2023-12-09</lastmod>

@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-12-09T13:07:29.815Z</updated>
+  <updated>2023-12-09T13:31:10.297Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>BlogManager</title>
+    <link href="http://example.com/2023/12/09/Technology/software/source-post-BlogManager/"/>
+    <id>http://example.com/2023/12/09/Technology/software/source-post-BlogManager/</id>
+    <published>2023-12-09T13:30:27.000Z</published>
+    <updated>2023-12-09T13:31:10.297Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/justin-lim-tloFnD-7EpI-unsplash%201.jpg" alt=""></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/justin-lim-tloFnD-7EpI-unsplash%201.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Obsdian + Hexo + Git == Prefect Blog</title>
