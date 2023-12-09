@@ -1,0 +1,221 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>archlinux下的微信安装 | 潇潇潇的博客</title><meta name="author" content="潇潇潇"><meta name="copyright" content="潇潇潇"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="archlinux微信安装 1.安装Wine 123456#解除注释在&#x2F;etc&#x2F;pacman.conf中的[multilab][multilib]Include &#x3D; &#x2F;etc&#x2F;pacman.d&#x2F;mirrorlist#之后可以安装winesudo pacman -Syusudo pacman -S wine 2.安装WeChat 首先，安装基于Wine的应用程序管理器winetricks： 1sud">
+<meta property="og:type" content="article">
+<meta property="og:title" content="archlinux下的微信安装">
+<meta property="og:url" content="http://example.com/2023/03/26/Technology/ComputerScience/install-wechat/index.html">
+<meta property="og:site_name" content="潇潇潇的博客">
+<meta property="og:description" content="archlinux微信安装 1.安装Wine 123456#解除注释在&#x2F;etc&#x2F;pacman.conf中的[multilab][multilib]Include &#x3D; &#x2F;etc&#x2F;pacman.d&#x2F;mirrorlist#之后可以安装winesudo pacman -Syusudo pacman -S wine 2.安装WeChat 首先，安装基于Wine的应用程序管理器winetricks： 1sud">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/img/bg-10.jpg">
+<meta property="article:published_time" content="2023-03-26T05:03:09.000Z">
+<meta property="article:modified_time" content="2023-04-26T17:31:14.000Z">
+<meta property="article:author" content="潇潇潇">
+<meta property="article:tag" content="archlinux1">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/bg-10.jpg"><link rel="shortcut icon" href="/img/bg.jpg"><link rel="canonical" href="http://example.com/2023/03/26/Technology/ComputerScience/install-wechat/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.json","preload":false,"languages":{"hits_empty":"We didn't find any results for the search: ${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'archlinux下的微信安装',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-04-27 01:31:14'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="潇潇潇的博客" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/bg-10.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">13</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">10</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">4</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="潇潇潇的博客"><span class="site-name">潇潇潇的博客</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">archlinux下的微信安装</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2023-03-26T05:03:09.000Z" title="Created 2023-03-26 13:03:09">2023-03-26</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-04-26T17:31:14.000Z" title="Updated 2023-04-27 01:31:14">2023-04-27</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%8A%80%E6%9C%AF-%E8%BD%AF%E4%BB%B6/">计算机技术 软件</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="archlinux下的微信安装"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1>archlinux微信安装</h1>
+<h2 id="1-安装Wine">1.安装Wine</h2>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">解除注释在/etc/pacman.conf中的[multilab]</span></span><br><span class="line">[multilib]</span><br><span class="line">Include = /etc/pacman.d/mirrorlist</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">之后可以安装wine</span></span><br><span class="line">sudo pacman -Syu</span><br><span class="line">sudo pacman -S wine</span><br></pre></td></tr></table></figure>
+<h2 id="2-安装WeChat">2.安装WeChat</h2>
+<p>首先，安装基于Wine的应用程序管理器winetricks：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S winetricks</span><br></pre></td></tr></table></figure>
+<p>接下来，创建一个新的Wine前缀（一个独立的Wine环境）</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">WINEPREFIX=~/.wechat WINEARCH=win32 winecfg</span><br></pre></td></tr></table></figure>
+<p>你可以将<code>~/.wechat</code>替换为你喜欢的路径。这将创建一个新的32位Wine环境。</p>
+<p>然后，使用winetricks安装WeChat所需的组件：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">WINEPREFIX=~/.wechat winetricks msxml3 riched20</span><br></pre></td></tr></table></figure>
+<p>现在，从官方网站下载WeChat安装程序（请注意，官方网站可能会更改下载链接，请检查官方网站以获取最新链接）：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -O WeChatSetup.exe https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe</span><br></pre></td></tr></table></figure>
+<p>使用Wine运行安装程序：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">WINEPREFIX=~/.wechat wine WeChatSetup.exe</span><br></pre></td></tr></table></figure>
+<h2 id="3-运行WeChat">3.运行WeChat</h2>
+<p>要运行WeChat，你需要指定前面创建的Wine前缀并运行安装在其中的WeChat程序。例如：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">WINEPREFIX=~/.wechat wine &quot;C:\Program Files\Tencent\WeChat\WeChat.exe&quot;</span><br></pre></td></tr></table></figure>
+<h2 id="4-创建脚本方便快速运行">4.创建脚本方便快速运行</h2>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">touch ~/wechat.sh</span><br><span class="line">vim ~/wechat.sh</span><br></pre></td></tr></table></figure>
+<p>在脚本文件中，输入以下内容：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">!/bin/bash</span></span><br><span class="line">WINEPREFIX=~/.wechat wine &quot;C:\Program Files\Tencent\WeChat\WeChat.exe&quot;</span><br></pre></td></tr></table></figure>
+<p>确保替换<code>~/.wechat</code>为你在前面步骤中创建的Wine前缀路径。</p>
+<p>保存并退出编辑器。</p>
+<p>为脚本文件添加可执行权限，以便可以从命令行运行它：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod +x ~/wechat.sh</span><br></pre></td></tr></table></figure>
+<h2 id="5-添加中文字体">5.添加中文字体</h2>
+<p>首先，安装微软雅黑字体。你可以从Windows系统中复制以下字体文件：</p>
+<ul>
+<li>
+<p>msyh.ttc</p>
+</li>
+<li>
+<p>msyhbd.ttc</p>
+</li>
+</ul>
+<p>把字体文件复制到Wine前缀的<code>Fonts</code>文件夹中，可以使用命令也可以直接手动复制</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp /path/to/msyh*.ttc ~/.wechat/drive_c/windows/Fonts/</span><br></pre></td></tr></table></figure>
+<p>使用winetricks安装微软雅黑字体：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">WINEPREFIX=~/.wechat winetricks msyh</span><br></pre></td></tr></table></figure>
+<p>安装Wine字体设置工具<code>winetricks</code>（如果尚未安装）：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S winetricks</span><br></pre></td></tr></table></figure>
+<p>使用<code>winetricks</code>运行Wine注册表编辑器<code>regedit</code>：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">WINEPREFIX=~/.wechat winetricks regedit</span><br></pre></td></tr></table></figure>
+<p>在注册表编辑器中，导航至以下路径</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">HKEY_CURRENT_USER\Software\Tencent\WeChat</span><br></pre></td></tr></table></figure>
+<p>在右侧窗格中，找到名为<code>Font</code>的字符串值。如果没有找到，请右键单击空白区域，选择“新建”&gt;“字符串值”，并将其命名为“Font”。</p>
+<p>双击<code>Font</code>字符串值，然后在“值数据”框中输入以下内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">微软雅黑, 12</span><br></pre></td></tr></table></figure>
+<p>请注意，这里的字体名称必须与你在Wine环境中安装的字体名称匹配。你可以根据需要更改字体大小（这里是12）。</p>
+<p>点击“确定”以保存设置，然后关闭注册表编辑器。</p>
+<p>重启电脑，即安装成功。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="http://example.com">潇潇潇</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://example.com/2023/03/26/Technology/ComputerScience/install-wechat/">http://example.com/2023/03/26/Technology/ComputerScience/install-wechat/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/archlinux1/">archlinux1</a></div><div class="post_share"><div class="social-share" data-image="/img/bg-10.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/03/29/Technology/DeepLearning/RCNN/" title="RCNN"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">RCNN</div></div></a></div><div class="next-post pull-right"><a href="/2023/03/25/Technology/ComputerScience/word_translate/" title="调用谷歌API实现划词翻译"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">调用谷歌API实现划词翻译</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/bg-10.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">潇潇潇</div><div class="author-info__description">记录过往</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">13</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">10</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/maxiaovivi"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/maxiaovivi" target="_blank" title="Github"><i class="fab fa-github"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">archlinux微信安装</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%AE%89%E8%A3%85Wine"><span class="toc-number">1.1.</span> <span class="toc-text">1.安装Wine</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%AE%89%E8%A3%85WeChat"><span class="toc-number">1.2.</span> <span class="toc-text">2.安装WeChat</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E8%BF%90%E8%A1%8CWeChat"><span class="toc-number">1.3.</span> <span class="toc-text">3.运行WeChat</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E5%88%9B%E5%BB%BA%E8%84%9A%E6%9C%AC%E6%96%B9%E4%BE%BF%E5%BF%AB%E9%80%9F%E8%BF%90%E8%A1%8C"><span class="toc-number">1.4.</span> <span class="toc-text">4.创建脚本方便快速运行</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E6%B7%BB%E5%8A%A0%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93"><span class="toc-number">1.5.</span> <span class="toc-text">5.添加中文字体</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/12/09/Technology/software/Obsdian%20+%20Hexo%20+%20Git%20==%20Prefect%20Blog/" title="Obsdian + Hexo + Git == Prefect Blog"><img src="/images/gems-1400682_1280.jpg" onerror="this.onerror=null;this.src='/images/404.jpg'" alt="Obsdian + Hexo + Git == Prefect Blog"/></a><div class="content"><a class="title" href="/2023/12/09/Technology/software/Obsdian%20+%20Hexo%20+%20Git%20==%20Prefect%20Blog/" title="Obsdian + Hexo + Git == Prefect Blog">Obsdian + Hexo + Git == Prefect Blog</a><time datetime="2023-12-09T12:15:54.289Z" title="Created 2023-12-09 20:15:54">2023-12-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/03/29/Technology/DeepLearning/RCNN/" title="RCNN">RCNN</a><time datetime="2023-03-29T02:38:13.000Z" title="Created 2023-03-29 10:38:13">2023-03-29</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/03/26/Technology/ComputerScience/install-wechat/" title="archlinux下的微信安装">archlinux下的微信安装</a><time datetime="2023-03-26T05:03:09.000Z" title="Created 2023-03-26 13:03:09">2023-03-26</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/03/25/Technology/ComputerScience/word_translate/" title="调用谷歌API实现划词翻译">调用谷歌API实现划词翻译</a><time datetime="2023-03-25T15:45:44.000Z" title="Created 2023-03-25 23:45:44">2023-03-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/03/21/Technology/DeepLearning/chuqi/" title="对抗样本生成方法"><img src="https://s2.loli.net/2023/03/20/TkeiAjqp3Jdg9tI.png" onerror="this.onerror=null;this.src='/images/404.jpg'" alt="对抗样本生成方法"/></a><div class="content"><a class="title" href="/2023/03/21/Technology/DeepLearning/chuqi/" title="对抗样本生成方法">对抗样本生成方法</a><time datetime="2023-03-21T07:08:46.000Z" title="Created 2023-03-21 15:08:46">2023-03-21</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By 潇潇潇</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex/dist/contrib/copy-tex.min.js"></script><script>(() => {
+  document.querySelectorAll('#article-container span.katex-display').forEach(item => {
+    btf.wrap(item, 'div', { class: 'katex-wrap'})
+  })
+})()</script></div><canvas class="fireworks" mobile="true"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-ribbon.min.js" size="120" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Search</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  Loading the Database</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></body></html>
